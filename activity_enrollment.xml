@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    tools:context=".EnrollmentActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/ivRegLogo"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginBottom="55dp"
+                android:layout_marginTop="18dp"
+                android:contentDescription="TODO"
+                android:scaleType="fitCenter"
+                android:src="@drawable/yeflogo" />
+
+
+
+            <ImageView
+                android:id="@+id/tvEnrollment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/enrollment"
+
+                 />
+
+
+            <AutoCompleteTextView
+                android:id="@+id/atvFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_rect"
+                android:drawableLeft="@drawable/icon_person"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/icon_person"
+                android:hint="Firstname"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="15sp" />
+            <AutoCompleteTextView
+                android:id="@+id/atvLastName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_rect"
+                android:drawableLeft="@drawable/icon_person"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/icon_person"
+                android:hint="Lastname"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="15sp" />
+            <AutoCompleteTextView
+                android:id="@+id/city"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_rect"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_location_city_black_24dp"
+                android:hint="City"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="15sp"
+                android:drawableLeft="@drawable/ic_location_city_black_24dp" />
+
+
+
+            <AutoCompleteTextView
+                android:id="@+id/atvEmailEnroll"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_rect"
+                android:drawableLeft="@drawable/icon_mail"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/icon_mail"
+                android:hint="@string/emailReg"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="15sp" />
+
+
+
+            <AutoCompleteTextView
+                android:id="@+id/atvPasswordReg"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_rect"
+                android:drawableLeft="@drawable/icon_password"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/icon_password"
+                android:hint="@string/passwordReg"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="15sp" />
+            <AutoCompleteTextView
+                android:id="@+id/atvMobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_rect"
+                android:drawableLeft="@drawable/ic_call_black_24dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/icon_person"
+                android:hint="Phonenumber"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="15sp" />
+
+
+            <Button
+                android:id="@+id/btnEnroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btnsignup_gradient"
+                android:text="Enroll"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
